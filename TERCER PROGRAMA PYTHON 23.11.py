@@ -1,14 +1,13 @@
 import random
 
-
-#Primer juego
+# Primer juego
 def Adivina_el_numero():
     while True:
         numero_secreto = random.randint(1, 100)
         intentos = 0
 
         print("¡Bienvenido al juego Adivina el Número!")
-        
+
         while True:
             intento = int(input("Adivina el número entre el 1 al 100: "))
             intentos += 1
@@ -28,9 +27,7 @@ def Adivina_el_numero():
             print("¡Hasta luego!")
             break
 
-
-
-#Segundo juego 
+# Segundo juego
 def piedra_papel_tijeras():
     opciones = ["piedra", "papel", "tijeras"]
     print("¡Bienvenido al juego Piedra, papel o tijera!")
@@ -46,9 +43,9 @@ def piedra_papel_tijeras():
 
         print(f"La computadora eligió {computadora}.")
 
-        if usuario not in opciones: #verifica si el usuario ingreo algo diferente a PPT
+        if usuario not in opciones:  # verifica si el usuario ingresó algo diferente a PPT
             print("Opción no válida. Por favor, elige piedra, papel o tijeras.")
-            continue  #el continue te skipea las lineas de abajo y sube devuelta hasta arriba del while
+            continue  # el continue te skipea las líneas de abajo y sube devuelta hasta arriba del while
 
         if usuario == computadora:
             print("¡Empate!")
@@ -67,11 +64,11 @@ def piedra_papel_tijeras():
             break
 
 print("Bienvenido al simulador de juegos tradicionales")
-print("Este simulador consta con dos juegos, Adivina el numero y Piedra Papel o Tijera")
+print("Este simulador consta con dos juegos, Adivina el número y Piedra Papel o Tijera")
 
-funcionar = True 
+funcionar = True
 while funcionar:
-    print("Elige el juego que quieras jugar, si presiona 0 eligiras Adivina el numero y si presiona 1 jugaras P,P,T:  ")
+    print("Elige el juego que quieras jugar. Presiona 0 para Adivina el número o 1 para Piedra, Papel o Tijera: ")
     Eleccion = int(input())
     if Eleccion == 0:
         Adivina_el_numero()
@@ -86,4 +83,4 @@ while funcionar:
             print("¡Hasta luego!")
             break
     else:
-       print("No se elegio un numero permitido")
+        print("No se eligió un número permitido")
