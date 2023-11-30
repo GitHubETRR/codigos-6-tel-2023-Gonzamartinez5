@@ -1,13 +1,13 @@
 //El codigo tiene un solo error y falta agregar un juego más pero es la ultima version en la fecha 23/11
 
 
-#include <algorithm>
-#include <cstdlib>
-#include <ctime>
-#include <iostream>
-#include <random>
-#include <string>
-#include <vector>
+#include <algorithm> // Incluye funciones de algoritmos estándar, como std::sort
+#include <cstdlib>   // Incluye funciones para manipulación de cadenas, conversión de tipos y funciones generales de C
+#include <ctime>     // Incluye funciones relacionadas con el tiempo, como std::time
+#include <iostream>  // Incluye la biblioteca de entrada/salida estándar (std::cout, std::cin, std::endl)
+#include <random>    // Incluye funcionalidades para generación de números aleatorios con std::random_device y std::mt19937
+#include <string>    // Incluye la clase std::string y funciones relacionadas
+#include <vector>    // Incluye la clase std::vector para trabajar con arreglos dinámicos
 
 using namespace std;
 
