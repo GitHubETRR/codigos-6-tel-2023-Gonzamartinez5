@@ -55,7 +55,7 @@ void juego_cartas() {
 
   // Inicio la mezcla de cartas
   for (int i = 1; i <= 12; ++i) {
-    cartasDeJuego.push_back(i);
+    cartasDeJuego.push_back(i);           //La función push_back se utiliza para agregar un elemento al final del contenedor. 
   }
 
   // Mezclo las cartas
